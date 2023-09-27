@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Filme</title>
+    <style>
+      .error {
+          border: 1px solid red;
+      }
+    </style>
+
+  <script src="js/validacao-filme.js" async></script>
+</head>
+<body>
+    <a href="filmes.html">Ver filmes cadastrados</a>
+    <h1>Cadastro de Filme</h1>
+    <form id="filmeForm" action="#" method="post">
+        <label for="nome_brasil">Nome do Filme no Brasil:</label>
+        <input type="text" id="nome_brasil" name="nome_brasil" ><br><br>
+
+        <label for="nome_original">Nome do Filme no Original:</label>
+        <input type="text" id="nome_original" name="nome_original"><br><br>
+
+        <label for="diretor">Nome do Diretor:</label>
+        <input type="text" id="diretor" name="diretor"><br><br>
+
+        <label for="data_estreia">Data de Estreia no Cinema:</label>
+        <input type="date" id="data_estreia" name="data_estreia"><br><br>
+
+        <label id="classificacaoLabel">Classificação Indicativa:</label><br>
+        <input type="radio" id="livre" name="classificacao" value="Livre">
+        <label for="livre">Livre</label><br>
+
+        <input type="radio" id="maiores_10" name="classificacao" value="Não recomendado para menores de 10 anos">
+        <label for="maiores_10">Não recomendado para menores de 10 anos</label><br>
+
+        <input type="radio" id="maiores_12" name="classificacao" value="Não recomendado para menores de 12 anos">
+        <label for="maiores_12">Não recomendado para menores de 12 anos</label><br>
+
+        <input type="radio" id="maiores_14" name="classificacao" value="Não recomendado para menores de 14 anos">
+        <label for="maiores_14">Não recomendado para menores de 14 anos</label><br>
+
+        <input type="radio" id="maiores_16" name="classificacao" value="Não recomendado para menores de 16 anos">
+        <label for="maiores_16">Não recomendado para menores de 16 anos</label><br>
+
+        <input type="radio" id="maiores_18" name="classificacao" value="Não recomendado para menores de 18 anos">
+        <label for="maiores_18">Não recomendado para menores de 18 anos</label><br><br>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="Aventura">Aventura</option>
+            <option value="Ação">Ação</option>
+            <option value="Animação">Animação</option>
+            <option value="Romance">Romance</option>
+            <option value="Musical">Musical</option>
+            <option value="Suspense">Suspense</option>
+            <option value="Terror">Terror</option>
+            <option value="Ficção científica">Ficção científica</option>
+        </select><br><br>
+
+        <input type="checkbox" id="streaming" name="streaming">
+        <label for="streaming">Filme liberado para streaming</label><br><br>
+
+        <button type="submit" id="cadastroBtn" disabled>Cadastrar Filme</button>
+    </form>
+</body>
+</html>
